@@ -1,0 +1,37 @@
+
+
+.address {
+    font-style: normal;
+  }
+  
+.addr {
+    font-weight: 400;
+    color: $accent-color-white;
+    margin: 0;
+  }
+   
+
+.contacts-footer {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color $time-transition-duration $timing-function-cubic;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+  }
+  
+  .addr-footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+  }
+
+  
