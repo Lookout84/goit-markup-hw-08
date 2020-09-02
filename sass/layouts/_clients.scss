@@ -1,21 +1,24 @@
 .clients-link {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     flex-wrap: wrap;
   }
   
   .clients-item {
+    @media screen and (min-width: 480px){ 
     width: calc((100% - 30px * 2) / 2);
+    }
     margin-bottom: 30px;
   }
   
   .clients-item, 
   .clients {
+    @media screen and (max-width: 480px){
+      width: 210px;
+      height: 90px;
+    }
     box-sizing: border-box;
     border-radius: 4px;
-    width: 210px;
-    height: 90px;
     text-align: center;
     display: flex;
     align-items: center;

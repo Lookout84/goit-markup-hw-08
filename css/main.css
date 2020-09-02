@@ -1109,14 +1109,18 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .clients-item {
-  width: calc((100% - 30px * 2) / 2);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-item {
+    width: calc((100% - 30px * 2) / 2);
+  }
 }
 
 .clients-item,
@@ -1124,8 +1128,6 @@ summary {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  width: 210px;
-  height: 90px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1136,6 +1138,14 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .clients-item,
+  .clients {
+    width: 210px;
+    height: 90px;
+  }
 }
 
 .clients {
