@@ -308,6 +308,19 @@ summary {
   padding: 0;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.167;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
 .logo-web,
 .logo-studio,
 .logo-white {
@@ -557,6 +570,23 @@ summary {
 .btn-submit:hover, .btn-submit:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-item {
+  width: calc((100% - 10px * 3) / 4);
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-item,
@@ -905,8 +935,17 @@ summary {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero.jpg);
@@ -919,16 +958,12 @@ summary {
 }
 
 .page-title {
-  display: inline-block;
-  width: 696px;
-  min-height: 120;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.364;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 200px 0 30px;
 }
 
 .features {
@@ -936,16 +971,19 @@ summary {
 }
 
 .features-title {
+  text-align: center;
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
-  margin: 0;
-  padding: 10px 0;
-  width: 270px;
+  margin-bottom: 10px;
 }
 
 .features-link {
   margin-left: auto;
+}
+
+.features-item {
+  margin-bottom: 30px;
 }
 
 .features-item:nth-child(4n) {
@@ -953,6 +991,15 @@ summary {
 }
 
 .features-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1018,16 +1065,18 @@ summary {
 }
 
 .team-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 24px;
 }
 
-.team-item:nth-child(4n) {
-  margin-right: 0;
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -1039,9 +1088,9 @@ summary {
 }
 
 .team-img {
-  display: block;
-  margin: 0 0 30px;
   width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .team-profession {
@@ -1066,11 +1115,8 @@ summary {
 }
 
 .clients-item {
-  width: calc((100% - 5px * 2) / 2);
-}
-
-.clients-item:nth-child(6n) {
-  margin-right: 0;
+  width: calc((100% - 30px * 2) / 2);
+  margin-bottom: 30px;
 }
 
 .clients-item,
@@ -1078,7 +1124,7 @@ summary {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   text-align: center;
   display: -webkit-box;

@@ -1,4 +1,15 @@
- 
+.social-link {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: calc((100% - 10px * 3) / 4);
+       &:not(:last-child) {
+          margin-right: 10px;
+      }
+}
+
   .social-item {
    
   }

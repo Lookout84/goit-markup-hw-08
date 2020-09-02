@@ -3,23 +3,28 @@
   }
   
   .features-title {
+    text-align: center;
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;
-    margin: 0;
-    padding: 10px 0;
-    width: 270px;
+    margin-bottom: 10px;
   }
   
   .features-link {
     margin-left: auto;
   }
   
-  .features-item:nth-child(4n) {
-    margin-bottom: 30px;
+  .features-item {
+      margin-bottom: 30px;
+    &:nth-child(4n) {
+      margin-bottom: 30px;
   }
+}
   
   .features-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
