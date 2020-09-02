@@ -2,11 +2,10 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: wrap;
   }
   
   .clients-item {
-    width: calc((100% - 5px * 2) / 2);
+    width: calc((100% - 10px * 5) / 6);
         
     &:nth-child(6n) {
             margin-right: 0;

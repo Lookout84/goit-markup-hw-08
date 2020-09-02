@@ -1,12 +1,39 @@
 .footer {
     background-color: #2F303A;
     padding: 60px 0 60px;
-    text-align: center;
   }
-     
+  
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+  
+  
+  
+  .footer-box-item {
+    width: calc((100% - 30px) / 2);
+    margin: 0;
+        &:nth-child(2) {
+            margin-left: 30px;
+        }
+
+        &.footer-flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+          }
+  }
+ 
   .footer-box-list {
-    margin-bottom: 60px;
-  }  
+    width: calc((100% - 30px) / 2);
+        
+        .footer-flexbox {
+            display: flex;
+            align-content: flex-start;
+        }
+  }
+      
   .footer-icon {
     fill: $accent-color-white;
     display: block;
@@ -22,7 +49,10 @@
     margin-bottom: 20px;
   }
   
-   
+  .footer-form-box {
+    display: flex;
+  }
+  
   .subscription-field {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -47,9 +77,5 @@
   .icon-send {
     position: absolute;
     top: 13px;
-    right: 144px;
-  }
-
-  .footer-form {
-    margin-bottom: 20px;
+    right: 28px;
   }

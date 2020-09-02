@@ -1,6 +1,18 @@
- 
+.social-link {
+    display: flex;
+    justify-content: center;
+  }
+  
   .social-item {
-   
+    width: calc((100% - 10px * 3) / 4);
+    margin-bottom: 30px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    
   }
   
   .social-item, 
@@ -61,5 +73,5 @@
 
   .social-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }

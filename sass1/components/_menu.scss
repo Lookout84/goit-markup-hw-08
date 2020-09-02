@@ -3,6 +3,8 @@
 }
 
 .navigation {
+    display: flex;
+    align-items: baseline;
     margin-right: auto;  
 }
 
@@ -18,7 +20,11 @@
     border-radius: 2px;
 }
 
- 
+.menu-list {
+    display: flex;
+    margin-left: 93px;
+  }
+  
 .menu-item {
     display: block;
     position: relative;

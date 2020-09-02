@@ -4,7 +4,7 @@
   color: $accent-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.19;
 }
 
@@ -13,9 +13,10 @@
 }
 
 .logo-footer {
-    margin-bottom: 20px;;
+    margin: 0;
+    margin-bottom: 20px;
   }
 .logo-white {
     color: $accent-color-white;
     padding: 0;
-}
+  }

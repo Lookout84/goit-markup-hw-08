@@ -1,6 +1,3 @@
-.work {
-  display: none;
-}
 .work-title {
     font-weight: 700;
     line-height: 1.142;
@@ -10,7 +7,11 @@
     display: inline-block;
   }
   
-
+  .work-link .flexbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .work-item {
     width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;

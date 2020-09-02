@@ -14,12 +14,15 @@
 }
 
 .btn-subscription {
+  display: flex;
+  align-items: center;
   background: $accent-color;
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.06em;
   color: $accent-color-white;
   border: transparent;
+  margin-left: 12px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -36,8 +39,6 @@
   position: relative;
   margin: 0;
   padding: 0;
-  height: 50px;
-  min-width: 200px;
 }
 
 .btn-portfolio {
