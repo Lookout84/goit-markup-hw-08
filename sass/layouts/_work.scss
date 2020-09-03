@@ -1,5 +1,7 @@
 .work {
-  display: none;
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
 }
 .work-title {
     font-weight: 700;
@@ -9,8 +11,10 @@
     background-color: rgba(47, 48, 58, 0.8);
     display: inline-block;
   }
-  
-
+  .work-link {
+    display: flex;
+    justify-content: space-between;
+  }
   .work-item {
     width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;

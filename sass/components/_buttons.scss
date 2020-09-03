@@ -14,17 +14,14 @@
 }
 
 .btn-subscription {
-  display: block;
   background: $accent-color;
   border-radius: 4px;
-  text-align: center;
   letter-spacing: 0.06em;
   color: $accent-color-white;
   border: transparent;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
-  padding: 10px 28px;
   height: 50px;
   min-width: 100%;
 }
@@ -34,6 +31,7 @@
 }
   
 .btn-box {
+  display: flex;
   margin: 0;
   padding: 0;
   height: 50px;
