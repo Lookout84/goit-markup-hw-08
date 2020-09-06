@@ -71,6 +71,13 @@
   }
 
   .social-footer {
+    @media screen and (max-width: 1199px) {
     display: flex;
     justify-content: center;
+  }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+    }
+    
   }

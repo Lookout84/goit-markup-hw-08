@@ -364,6 +364,14 @@ summary {
   line-height: 1.19;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-web,
+  .logo-studio,
+  .logo-white {
+    font-size: 26px;
+  }
+}
+
 .logo-studio {
   color: #212121;
 }
@@ -375,6 +383,12 @@ summary {
 .logo-white {
   color: #FFFFFF;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-list {
+    display: none;
+  }
 }
 
 .menu-link.current {
@@ -410,6 +424,12 @@ summary {
 .contacts {
   vertical-align: middle;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts-icon {
@@ -494,6 +514,12 @@ summary {
   height: 50px;
   min-width: 200px;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-subscription {
+    margin-left: 12px;
+  }
 }
 
 .btn-text {
@@ -586,7 +612,6 @@ summary {
 
 .btn-submit {
   display: block;
-  margin-bottom: 40px;
   min-width: 200px;
   height: 50px;
   border: transparent;
@@ -697,13 +722,26 @@ summary {
   background-color: #2196F3;
 }
 
-.social-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 1199px) {
+  .social-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .address {
@@ -741,8 +779,29 @@ summary {
 
 .page-header {
   border-bottom: 1px solid #ECECEC;
-  height: 60px;
-  padding: 24px 0 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    height: 60px;
+    padding: 24px 0 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    height: 80px;
+    padding: 24px 0 24px;
+  }
+}
+
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .project-portfolio {
@@ -845,7 +904,12 @@ summary {
 .footer {
   background-color: #2F303A;
   padding: 60px 0 60px;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -934,13 +998,31 @@ summary {
   margin-bottom: 20px;
 }
 
-.footer-item {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-item {
+    text-align: center;
+  }
 }
 
 .footer-form-box {
   display: block;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form-box {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscription-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
 }
 
 .subscription-field {
@@ -1017,7 +1099,7 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    width: 100%;
+    width: 358px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

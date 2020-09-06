@@ -375,15 +375,17 @@
                 <div class="footer-box-item">
                     <div class="footer-form-box">
                         <h2 class="footer-title">Подпешитесь на рассылку</h2>
-                        <form class="footer-form">
-                            <input class="subscription-field" id="subscription-mail" type="email" placeholder="E-mail">
-                        </form>
-                            <button class="btn-subscription" type="submit">
-                                <span class="btn-text">Подписаться</span>
-                                <svg class="icon-send" width="24"  height="24">
-                                    <use href="./images/icons/sprite.svg#icon-send"></use>
-                                </svg>
-                            </button>
+                        <div class="footer-subscription-box">
+                            <form class="footer-form">
+                                <input class="subscription-field" id="subscription-mail" type="email" placeholder="E-mail">
+                            </form>
+                                <button class="btn-subscription" type="submit">
+                                    <span class="btn-text">Подписаться</span>
+                                    <svg class="icon-send" width="24"  height="24">
+                                        <use href="./images/icons/sprite.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -433,8 +435,9 @@
                         <label class="contract-label">
                             <input type="checkbox" class="form-checkbox" name="contract">
                             <span class="icon-check"></span>
-                            Соглашаюсь с рассылкой и принимаю
+                            <span class="contract">Соглашаюсь с рассылкой и принимаю
                             <a class="contract-accent" href="#">Условия договора</a>
+                            </span>
                         </label>
                 </form>
                 <div class="btn-position">
