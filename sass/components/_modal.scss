@@ -7,9 +7,10 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity $time-transition-duration $timing-function-cubic;
 
+    overflow-y: scroll;
+
     @media screen and (max-width: 767px) {
       padding: 94px 15px;
-      overflow-y: scroll;
     }
     }
   
@@ -28,6 +29,7 @@
     justify-content: flex-end;
     max-width: 450px;
     min-height: 100%;
+    padding-bottom: 40px;
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       min-width: 450px;
