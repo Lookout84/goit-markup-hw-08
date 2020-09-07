@@ -5,7 +5,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
-        margin-left: 88px;
+        margin-left: 84px;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -36,7 +36,7 @@
     border-radius: 2px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px)  {
-        transform: translateY(19px);
+        transform: translateY(16.5px);
     }
 
     @media screen and (min-width: 1200px) {
@@ -59,15 +59,18 @@
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 84px;
-        font-size: 12px;
     }
+
  }
   
   .contacts-icon {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 8px;
     }
+
+    @media screen and (min-width: 1200px) {
     margin-right: 10px;
+    }
     fill: $grey-text-color;
     vertical-align: middle;
   
@@ -76,8 +79,15 @@
   
   .mail-link,
   .phone-link {
+
+    @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        }
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     text-decoration: none;
