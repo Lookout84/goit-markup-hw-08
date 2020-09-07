@@ -1,4 +1,9 @@
-.logo-web, 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-web,
 .logo-studio,
 .logo-white {
   color: $accent-color;
@@ -6,7 +11,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.19;
-  
+
   @media screen and (min-width: 1200px) {
     font-size: 26px; 
   }
@@ -14,6 +19,7 @@
 
 .logo-studio {
   color: $main-color;
+  margin-left: 1px;
 }
 
 .logo-footer {
