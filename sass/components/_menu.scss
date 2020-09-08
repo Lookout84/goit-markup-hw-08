@@ -33,20 +33,22 @@
 }
 
 .menu-btn .icon-cross {
-    display: none;
+    opacity: 0;
 }
 
 .menu-btn.is-open .icon-cross {
-    display: block;
+    opacity: 1;
 }
 
 .menu-btn.is-open .icon-menu {
-    display: none;
+    opacity: 0;
 }
 
-.icon-menu.is-open,
-.icon-cross.is-open {
-    transition: fill $time-transition-duration $timing-function-cubic;
+.icon-menu,
+.icon-cross {
+    transition: fill $time-transition-duration $timing-function-cubic,
+        opacity $time-transition-duration $timing-function-cubic;
+
     
     &:hover,
     &:focus {
