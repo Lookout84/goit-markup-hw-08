@@ -19,11 +19,28 @@
 
 .navigation {
     margin-right: auto;
+    
+    @media screen and (max-width: 767px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items:center;
-    }  
+    }
 }
+
+.icon-menu,
+.icon-cross {
+    transition: fill $time-transition-duration $timing-function-cubic;
+    
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+    }
 
 .current::after {
     display: block;
