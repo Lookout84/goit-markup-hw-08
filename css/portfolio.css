@@ -454,6 +454,22 @@ img {
   }
 }
 
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-menu,
+.menu-btn .icon-cross {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-btn .icon-cross {
   opacity: 0;
 }
@@ -466,16 +482,22 @@ img {
   opacity: 0;
 }
 
+.menu-btn:hover .icon-menu,
+.menu-btn:hover .icon-cross, .menu-btn:focus .icon-menu,
+.menu-btn:focus .icon-cross {
+  fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 .icon-menu,
 .icon-cross {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-menu:hover, .icon-menu:focus,
-.icon-cross:hover,
-.icon-cross:focus {
-  fill: #2196F3;
 }
 
 .current::after {
@@ -755,15 +777,6 @@ img {
   .menu-btn {
     display: none;
   }
-}
-
-.menu-icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-icon:hover, .menu-icon:focus {
-  fill: #2196F3;
 }
 
 .social-link {

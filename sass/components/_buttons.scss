@@ -147,11 +147,4 @@
     }
   }
  
-  .menu-icon {
-    transition: fill $time-transition-duration $timing-function-cubic;
-    
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-    }
-    }
+  
