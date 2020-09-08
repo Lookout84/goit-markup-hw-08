@@ -1,5 +1,12 @@
 .menu-list {
    
+    @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         margin-left: 84px;
@@ -12,37 +19,45 @@
 
 .menu-link.current{
     color: $accent-color;
+    position: relative;
 }
 
 .navigation {
-
-    @media screen and (max-width: 479px) {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        
-    }
-
-    /*@media screen and (min-width: 768px) {
-          display: flex;
-          align-items: center;
-        }
-    @media screen and (min-width: 1200px) {
-          justify-content: space-between;
-        }   */
+        justify-content: space-between;  
 }
 
 .menu-container {
-    margin-right: auto;
-    
+          
     @media screen and (max-width: 767px) {
         display: none;
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        width: 100%;
+        background-color: $accent-color-white;
+        z-index: 2;
+        padding: 60px;
+
+        &.is-open {
+            display: block;
+        }
+        
     }
-    
-    @media screen and (min-width: 768px) {
+        
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-grow: 1;
+        margin-right: auto;
     }
    
 }
@@ -105,6 +120,10 @@
     background-color: $accent-color;
     border-radius: 2px;
 
+    @media screen and (max-width: 767px)  {
+        bottom: -8px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px)  {
         transform: translateY(16.5px);
     }
@@ -116,16 +135,38 @@
 
  
 .menu-item {
+
+    @media screen and (max-width: 767px) {
+        display: block;
+         &:not(:last-child) {
+            margin-bottom: 40px;
+    }
+}
+
+    @media screen and (min-width: 768px) {
     display: block;
     position: relative;
     &:not(:last-child) {
         margin-right: 50px;
     }
 }
+}
 
 .contacts {
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;      
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 84px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
     }
 }
 
@@ -144,6 +185,12 @@
   }
   
   .contact-link {
+    
+    @media screen and (max-width: 767px) {
+       &:not(:last-child) {
+           margin-bottom: 16px;
+       } 
+    }
 
     &:not(:last-child) {
         @media screen and (min-width: 1200px) {
