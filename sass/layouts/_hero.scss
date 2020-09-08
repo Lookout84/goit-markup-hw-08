@@ -28,12 +28,14 @@
   .page-title {
     display: inline-block;
     @media screen and (max-width: 1199px) {
-      min-height: 84px;
+      max-width: 360px;
+      max-height: 84px;
       font-size: 26px;
     }
 
     @media screen and (min-width: 1200px) {
-      min-height: 120px;
+      max-width: 696px;
+      max-height: 120px;
       font-size: 44px;
     }
 

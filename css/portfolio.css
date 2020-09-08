@@ -505,42 +505,34 @@ img {
   }
 }
 
-.mail-link,
-.phone-link {
+.contact-link {
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
-  margin: 0;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
-  .mail-link,
-  .phone-link {
-    font-size: 12px;
+@media screen and (min-width: 1200px) {
+  .contact-link:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .mail-link,
-  .phone-link {
+  .contact-link {
     font-size: 14px;
   }
 }
 
-.mail-link:hover, .mail-link:focus,
-.phone-link:hover,
-.phone-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: #2196F3;
 }
 
-.mail-link:hover .contacts-icon, .mail-link:focus .contacts-icon,
-.phone-link:hover .contacts-icon,
-.phone-link:focus .contacts-icon {
+.contact-link:hover .contacts-icon, .contact-link:focus .contacts-icon {
   fill: #2196F3;
 }
 
@@ -558,10 +550,6 @@ img {
 
 .menu-link:hover, .menu-link:focus {
   color: #2196F3;
-}
-
-.mail-link {
-  margin-right: 30px;
 }
 
 .btn {

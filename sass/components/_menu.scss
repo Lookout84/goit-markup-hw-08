@@ -77,24 +77,24 @@
     transition: fill $time-transition-duration $timing-function-cubic;
   }
   
-  .mail-link,
-  .phone-link {
+  .contact-link {
 
-    @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
-        font-size: 12px;
+    &:not(:last-child) {
+        @media screen and (min-width: 1200px) {
+            margin-right: 30px;   
+        } 
     }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        }
+      
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: $main-color;
-    margin: 0;
-    
     color: $grey-text-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
     transition: color $time-transition-duration $timing-function-cubic;
         &:hover,
         &:focus {       
@@ -121,6 +121,3 @@
         }
   }
   
-  .mail-link {
-    margin-right: 30px;
-  }
