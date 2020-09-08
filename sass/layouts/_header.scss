@@ -16,15 +16,3 @@
     padding: 26px 0 26px;
   }
 }
-
-.header-box {
-  
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-  }
-  
-}

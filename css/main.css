@@ -397,12 +397,6 @@ img {
   padding: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-list {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-list {
     display: -webkit-box;
@@ -425,12 +419,37 @@ img {
   color: #2196F3;
 }
 
-.navigation {
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu-container {
   margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
-  .navigation {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,17 +459,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -532,12 +540,6 @@ img {
 
 .menu-item:not(:last-child) {
   margin-right: 50px;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -761,22 +763,6 @@ img {
 .btn-submit:hover, .btn-submit:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.menu-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
 }
 
 .social-link {
@@ -1223,25 +1209,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-box {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1252,7 +1219,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero.jpg);
