@@ -419,7 +419,17 @@ img {
   color: #2196F3;
 }
 
-@media screen and (min-width: 768px) {
+.navigation {
+  /*@media screen and (min-width: 768px) {
+          display: flex;
+          align-items: center;
+        }
+    @media screen and (min-width: 1200px) {
+          justify-content: space-between;
+        }   */
+}
+
+@media screen and (max-width: 479px) {
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -427,11 +437,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
