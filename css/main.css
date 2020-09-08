@@ -454,15 +454,27 @@ img {
   }
 }
 
-.icon-menu,
-.icon-cross {
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.icon-menu.is-open,
+.icon-cross.is-open {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-menu:hover, .icon-menu:focus,
-.icon-cross:hover,
-.icon-cross:focus {
+.icon-menu.is-open:hover, .icon-menu.is-open:focus,
+.icon-cross.is-open:hover,
+.icon-cross.is-open:focus {
   fill: #2196F3;
 }
 

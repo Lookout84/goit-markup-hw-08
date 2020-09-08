@@ -32,8 +32,20 @@
     }
 }
 
-.icon-menu,
-.icon-cross {
+.menu-btn .icon-cross {
+    display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+    display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+    display: none;
+}
+
+.icon-menu.is-open,
+.icon-cross.is-open {
     transition: fill $time-transition-duration $timing-function-cubic;
     
     &:hover,
