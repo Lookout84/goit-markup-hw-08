@@ -19,9 +19,12 @@
 
 .header-box {
   
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    align-items: center;
+  @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
+  
 }
