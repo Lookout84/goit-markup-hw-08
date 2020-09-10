@@ -9,7 +9,13 @@
 
     overflow-y: scroll;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      padding-right: 15px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       padding: 94px 15px;
     }
     
@@ -29,9 +35,12 @@
     justify-content: flex-end;
     padding-bottom: 40px;
 
-   
+    @media screen and (max-width: 479px) {
+      min-width: 100%;
+      min-height: 609px;
+    }
         
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
       min-width: 450px;
       min-height: 609px;
     }

@@ -1016,7 +1016,15 @@ img {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .backdrop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .backdrop {
     padding: 94px 15px;
   }
@@ -1050,7 +1058,14 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    min-width: 100%;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
@@ -1758,11 +1773,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .footer-box-item:not(:last-child) {
+    margin-bottom: 60px;
   }
 }
 
@@ -1787,13 +1804,9 @@ img {
   }
 }
 
-.footer-box-list {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-box-list:not(:last-child) {
-    margin-right: 165px;
+@media screen and (max-width: 767px) {
+  .footer-box-list {
+    margin-bottom: 60px;
   }
 }
 

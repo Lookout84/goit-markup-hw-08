@@ -88,6 +88,10 @@
   }
   
   .project-description {
+
+    @media screen and (max-width: 767px) {
+      padding: 77px 24px;       
+    }
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
