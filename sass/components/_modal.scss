@@ -10,8 +10,8 @@
     overflow-y: scroll;
 
     @media screen and (max-width: 479px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
+      padding-top: 60px;
+      padding-bottom: 60px;
       padding-right: 15px;
     }
 
@@ -205,6 +205,7 @@
     
   .contract-label {
     display: flex;
+    align-items: center;
     font-family: Roboto;
     font-weight: 400;
     font-size: 12px;

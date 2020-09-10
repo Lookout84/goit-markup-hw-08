@@ -707,6 +707,7 @@ img {
   background-color: #2196F3;
   padding: 10px 32px;
   margin: 0;
+  text-align: center;
   border-color: transparent;
 }
 
@@ -1018,8 +1019,8 @@ img {
 
 @media screen and (max-width: 479px) {
   .backdrop {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     padding-right: 15px;
   }
 }
@@ -1271,6 +1272,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
