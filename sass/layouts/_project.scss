@@ -89,9 +89,19 @@
   
   .project-description {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      padding: 22px;
+      font-size: 16px;       
+    }
+
+    @media screen and (min-width: 480px) {
       padding: 77px 24px;       
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 49px 24px;      
+    }
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.556;
